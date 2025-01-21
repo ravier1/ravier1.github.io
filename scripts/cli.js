@@ -1,5 +1,26 @@
 const cli = {};
 
+// Add Linux commands array
+const linuxCommands = [
+    'ls', 'cd', 'pwd', 'mkdir', 'rm', 'cp', 'mv', 'cat', 'grep', 'chmod',
+    'sudo', 'apt', 'apt-get', 'yum', 'pacman', 'systemctl', 'service',
+    'touch', 'man', 'nano', 'vim', 'ssh', 'scp', 'wget', 'curl'
+];
+
+// Add funny responses
+const funnyResponses = [
+    "Wrong terminal, buddy! This ain't your Linux playground! 🐧",
+    "Hold up! This is my portfolio website's terminal, not your Penguin Palace! 🪟",
+    "Error 404: Linux Not Found (This is my portfolio website, remember?) 😅",
+    "I'm seriously starting to think you're doing this on purpose... 🤔",
+    "Penguin commands detected! But this is my territory! 🚫🐧"
+];
+
+
+function getRandomResponse() {
+    return funnyResponses[Math.floor(Math.random() * funnyResponses.length)];
+}
+
 function getCommand(cmd) {
     let result = null;
     for (var i = 0; i < commands.length; i++){
@@ -23,6 +44,13 @@ function getArgument(args, arg) {
 cli.execute = (cmd) => {
     let result = { success: false };
     const values = cmd.split(' ');
+
+    // Check for Linux commands first
+    if (linuxCommands.includes(values[0].toLowerCase())) {
+        result.success = true;
+        result.output = getRandomResponse();
+        return result;
+    }
 
     if (values) {
         if (values[0] === "joke") {
@@ -115,7 +143,7 @@ const commands = [
                 <span class='code'> \
                     <strong>skills</strong> \
                     <div class='text tab'> \
-                        Shows all the languages I'm profecient in :) \
+                        Shows all the languages I'm profecient in 👨‍💻 \
                     </div> \
                 </span> \
                 <span class='code'> \
@@ -141,34 +169,11 @@ const commands = [
                         Tell me a joke! \
                     </div> \
                 </span> \
-                </span> \
                 <span class='code'> \
-                    <strong>portfolio</strong>   \
-                    <div class='text tab'> \
-                        OPTIONS: <br /> \
-                        <table class='actions'> \
-                            <tr> \
-                                <td>-b</td> \
-                                <td>List blog sources</td> \
-                            </tr> \
-                            <tr> \
-                                <td>-c</td> \
-                                <td>List of projects contributed to</td> \
-                            </tr> \
-                            <tr> \
-                                <td>-e</td> \
-                                <td>List speaking engagements and events</td> \
-                            </tr> \
-                            <tr> \
-                                <td>-p</td> \
-                                <td>List publications</td> \
-                            </tr> \
-                            <tr> \
-                                <td>-v</td> \
-                                <td>List technical demonstration videos</td> \
-                            </tr> \
-                        </table> \
-                    </div> \
+                    <strong>website-about</strong> \
+                    <div class='text tab bottom-8'> \
+                        Lets you know the cool features on this website (•‿•) \
+                </span> \
                 </span> \
                 "
     },
