@@ -341,6 +341,40 @@ const commands = [
 
                 
     },
+    {
+        command: "skills",
+        description: "List programming languages and technologies",
+        output: `<div class='output'>
+            <span class='bg-purple'>PROGRAMMING LANGUAGES & TECHNOLOGIES</span>
+            <div class='skills-grid'>
+                <div class='skill-item'>
+                    <img src="./skills-icons/python.png" alt="Python" class="skill-icon">
+                    <span style="font-family: 'JetBrains Mono', monospace;">Python</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/java.png" alt="Java" class="skill-icon">
+                    <span style="font-family: 'JetBrains Mono', monospace;">Java</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/c++.png" alt="C++" class="skill-icon">
+                    <span style="font-family: 'JetBrains Mono', monospace;">C++</span>
+                </div>
+
+                <div class='skill-item'>
+                    <img src="./skills-icons/csharp.png" alt="C#" class="skill-icon">
+                    <span style="font-family: 'JetBrains Mono', monospace;">C#</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/unity.png" alt="Unity" class="skill-icon">
+                    <span style="font-family: 'JetBrains Mono', monospace;">Unity</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/flutter.png" alt="Flutter" class="skill-icon">
+                    <span style="font-family: 'JetBrains Mono', monospace;">Flutter (Still Learning)</span>
+                </div>
+            </div>
+            </div>`
+    },
 ];
 
 const jokes = [

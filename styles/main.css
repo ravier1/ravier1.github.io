@@ -25,6 +25,8 @@
 
 .bg-red { background-color:#F5544D; }
 
+.bg-purple { background-color:#612af8; }
+
 .bg-yellow { background-color:#FABD2F; }
 
 .bg-green { background-color:#47D043; }
@@ -396,75 +398,36 @@ div.output a, i {
   pointer-events: none;
 }
 
-@media screen and (max-width: 768px) {
-    .taskbar-icons-box {
-        padding: 0 5px;
-    }
-
-    .taskbar-icons-box img.icon {
-        height: 18px;
-        width: 18px;
-        margin-left: 8px;
-    }
-
-    .download-button {
-        padding: 0 10px;
-        font-size: 14px;
-    }
-
-    .button-logo {
-        height: 16px;
-        margin-right: 8px;
-    }
-
-    .profile-container {
-        top: 10px;
-        left: 10px;
-    }
-
-    .profile-image {
-        width: 80px;
-        height: 80px;
-    }
-
-    .profile-text {
-        font-size: 12px;
-        margin-top: 8px;
-    }
-
-    .taskbar-time {
-        font-size: 12px;
-        margin-left: 6px;
-    }
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 480px) {
-    .download-button {
-        font-size: 12px;
-        padding: 0 8px;
-    }
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
 
-    .taskbar-icons-box img.icon {
-        height: 16px;
-        width: 16px;
-        margin-left: 6px;
-    }
+.skill-item i {
+    font-size: 24px;
+    width: 30px;
+    text-align: center;
+}
 
-    .profile-image {
-        width: 60px;
-        height: 60px;
-    }
+.skill-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
 
-    .profile-text {
-        font-size: 10px;
-        margin-top: 6px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    #taskbar {
-        height: 40px;
-    }
+.skill-item span {
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
 }
