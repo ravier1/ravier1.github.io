@@ -395,3 +395,76 @@ div.output a, i {
   position: relative;
   pointer-events: none;
 }
+
+@media screen and (max-width: 768px) {
+    .taskbar-icons-box {
+        padding: 0 5px;
+    }
+
+    .taskbar-icons-box img.icon {
+        height: 18px;
+        width: 18px;
+        margin-left: 8px;
+    }
+
+    .download-button {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .button-logo {
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    .profile-container {
+        top: 10px;
+        left: 10px;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-text {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .taskbar-time {
+        font-size: 12px;
+        margin-left: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .download-button {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .taskbar-icons-box img.icon {
+        height: 16px;
+        width: 16px;
+        margin-left: 6px;
+    }
+
+    .profile-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-text {
+        font-size: 10px;
+        margin-top: 6px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #taskbar {
+        height: 40px;
+    }
+}
