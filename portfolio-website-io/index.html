@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="styles/fa-all.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>🌟 Ravi's Developer Portfolio!</title>
+  <link rel="shortcut icon" type="image/png" href="path/to/your/favicon.png"/>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-image">
+      <img src="./resume/profile_pic.png" alt="Ravi's Profile Picture">
+    </div>
+    <h2 class="profile-text">Hey! It's Ravi!</h2>
+  </div>
+  <div id="taskbar" style="background: linear-gradient(to top, 
+    #083c7d 0%,
+    #083c7d 30%,
+    #094892 30%,
+    #094892 60%,
+    #0c5bb5 60%,
+    #0c5bb5 80%,
+    #1084d0 80%,
+    #1084d0 100%
+);">
+    <a href="./resume/RaviGKumar - Resume.pdf" download class="download-button">
+        <img src="./taskbar_icons/download-resume.png" alt="Logo" class="button-logo">
+        Download Resume!
+    </a>
+    <div class="taskbar-icons-box">
+        <img src="./taskbar_icons/audio.png" alt="Audio" class="icon">
+        <img id="wifi-icon" src="path/to/wifi-icon.png" alt="wifi" class="icon">
+        <img src="./taskbar_icons/safely-eject.png" alt="safely-eject" class="icon">
+        <span id="taskbar-time" class="taskbar-time" style="margin-left: 8px; font-size: 14px; font-family: 'Segoe UI', sans-serif;"></span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="menu">
+      <div class="buttons-flex">
+      <div class="button bg-red"></div>
+      <div class="button bg-yellow"></div>
+      <div class="button bg-green"></div>
+    </div>
+    <div class="title">
+      <a href="https://github.com/ravier1" target="_blank"><h1><i class='fab fa-github'></i> github.com/ravier1</h1></a>
+    </div>
+    </div>
+    <div id="app">
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts/shell.js"></script>
+  <script type="text/javascript" src="scripts/cli.js"></script>
+  <script type="text/javascript">
+    function setBackground() {
+      const hour = new Date().getHours();
+      let backgroundImage = '';
+
+      if (hour >= 6 && hour < 18) {
+        backgroundImage = 'url("./wallpapers/bliss_daytime.png")'; // Correct path to daytime image
+      } else {
+        backgroundImage = 'url("./wallpapers/bliss_nighttime.jpg")'; // Correct path to nighttime image
+      }
+      console.log(`Current hour: ${hour}`);
+      console.log(`Selected background image: ${backgroundImage}`);
+
+      const img = new Image();
+      img.src = backgroundImage.slice(5, -2); // Remove url() wrapper
+      img.onload = () => {
+        document.body.style.backgroundImage = backgroundImage;
+        document.body.style.backgroundSize = 'cover'; // Ensure the image covers the entire viewport
+        console.log('Background image loaded successfully.');
+      };
+      img.onerror = () => {
+        document.body.style.backgroundColor = '#282A35'; // Fallback color
+        console.log('Failed to load background image. Fallback color applied.');
+      };
+    }
+
+    function updateTime() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString('en-US', { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        hour12: true 
+      });
+      document.getElementById('taskbar-time').textContent = timeString;
+    }
+
+    function changeWifiIcon() {
+      const wifiIcon = document.getElementById('wifi-icon');
+      const wifiImages = [
+        './taskbar_icons/network-animate/001.png',
+        './taskbar_icons/network-animate/002.png',
+        './taskbar_icons/network-animate/003.png',
+        './taskbar_icons/network-animate/004.png',
+      ];
+      const randomIndex = Math.floor(Math.random() * wifiImages.length);
+      const hour = new Date().getHours();
+      if (hour >= 6 && hour < 22) 
+      {
+        wifiIcon.src = wifiImages[randomIndex];
+        const randomTime = Math.floor(Math.random() * 5000) + 1000; // Random time between 1 and 5 seconds
+        setTimeout(changeWifiIcon, randomTime);
+      } 
+      else 
+      {
+        wifiIcon.src = './taskbar_icons/network-animate/005.png';
+      }
+
+    }
+
+    setBackground();
+    setInterval(updateTime, 1000); // Update time every second
+    updateTime(); // Initial call to display time immediately
+    changeWifiIcon(); // Initial call to start changing WiFi icon
+
+    let clickCount = 0;
+
+    document.querySelector('.profile-image').addEventListener('click', () => {
+        clickCount++;
+        
+        if (clickCount === 10) {
+            const duration = 3 * 1000;
+            const animationEnd = Date.now() + duration;
+            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 1000 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            const interval = setInterval(() => {
+                const timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                const particleCount = 50 * (timeLeft / duration);
+                
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    origin: { x: randomInRange(0.1, 0.9), y: Math.random() - 0.2 }
+                });
+                confetti({
+                    ...defaults,
+                    particleCount,
+                    origin: { x: randomInRange(0.1, 0.9), y: Math.random() - 0.2 }
+                });
+            }, 250);
+
+            clickCount = 0;
+        }
+    });
+  </script>
+</body>
+</html>
