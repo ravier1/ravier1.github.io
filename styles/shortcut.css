@@ -1,0 +1,61 @@
+.xp-shortcut {
+    position: fixed;
+    bottom: 120px; /* Increased from 80px */
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Increased from 85px */
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Remove the original hover effect since it's now on the link */
+.xp-shortcut:hover {
+    background-color: transparent;
+    outline: none;
+}
+
+.xp-shortcut .icon-wrapper {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.xp-shortcut .shortcut-arrow {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+}
+
+.xp-shortcut img {
+    width: 56px; /* Increased from 48px */
+    height: 56px; /* Increased from 48px */
+    margin-bottom: 6px;
+}
+
+.xp-shortcut span {
+    color: white; /* Ensure text is white */
+    text-align: center;
+    font-size: 14px; /* Increased from 13px */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+/* Update second shortcut positioning to be above first */
+.xp-shortcut.second {
+    bottom: 250px; /* Increased from 180px to add more space between shortcuts */
+    left: 10px; /* Same left alignment as first shortcut */
+}
+
+/* Add styling for the shortcut links */
+.xp-shortcut-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.xp-shortcut-link:hover .xp-shortcut {
+    background-color: rgba(173, 216, 230, 0.3);
+    outline: 1px dotted #000;
+}

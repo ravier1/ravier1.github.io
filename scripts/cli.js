@@ -112,9 +112,38 @@ const commands = [
                     <div class='text tab'> \
                         About my Life, and Personal Information! \
                     </div> \
+                <span class='code'> \
+                    <strong>skills</strong> \
+                    <div class='text tab'> \
+                        Shows all the languages I'm profecient in :) \
+                    </div> \
                 </span> \
                 <span class='code'> \
-                    portfolio   \
+                    <strong>contact</strong> \
+                    <div class='text tab'> \
+                        Displays my contact information (e-mail, socials, etc.) \
+                    </div> \
+                <span class='code'> \
+                    clear \
+                    <div class='text tab bottom-8'> \
+                        Clear the terminal output \
+                    </div> \
+                </span> \
+                <span class='code'> \
+                    help \
+                    <div class='text tab'> \
+                        List all commands \
+                    </div> \
+                </span> \
+                 <span class='code'> \
+                    <strong>joke</strong> \
+                    <div class='text tab bottom-8'> \
+                        Tell me a joke! \
+                    </div> \
+                </span> \
+                </span> \
+                <span class='code'> \
+                    <strong>portfolio</strong>   \
                     <div class='text tab'> \
                         OPTIONS: <br /> \
                         <table class='actions'> \
@@ -141,53 +170,38 @@ const commands = [
                         </table> \
                     </div> \
                 </span> \
-                <span class='code'> \
-                    joke \
-                    <div class='text tab bottom-8'> \
-                        Tell me a joke! \
-                    </div> \
-                </span> \
-                <span class='code'> \
-                    clear \
-                    <div class='text tab bottom-8'> \
-                        Clear the terminal output \
-                    </div> \
-                </span> \
-                <span class='code'> \
-                    help \
-                    <div class='text tab'> \
-                        List all commands \
-                    </div> \
-                </span> \
                 "
     },
     {
         command: "about",
         valid: false,
-        output: `<div class='output'>
+        output: `<div class='output'> \
+                <span class='bg-blue'>Hello World!</span> \
+                <p>My name is Ravi Gangaiahanadoddi Kumar, but you can call me <span class='bg-blue'>Ravi</span>.</p> \
+                <div class='output'>
                 <span class='bg-blue'>CURRENT LOCATION</span>
                 <p>East Lansing, Michigan</p>
-                <span class='bg-blue'>CURRENT POSITION:- STUDENT</span>
+                <span class='bg-blue'>CURRENTLY:- <span class='bg-green'>ABOUT TO GRADUATE!🎉 (05/2025)</span></span>
                 <p></p>
                 <span class='bg-blue'>BIOGRAPHY & BACKGROUND</span>
                 <p>
-                    Ravi Gangaiahanadoddi Kumar is currently pursuing dual degrees at Michigan State University: a 
-                    Bachelor of Science in Computer Science and a Bachelor of Arts in Games and Interactive Media. 
-                    Originally from Bangalore, India, Ravi has been passionate about video games and software development 
-                    from a young age. His love for gaming began with *God of War: Ghost of Sparta* on the PSP, sparking a 
-                    lifelong fascination with creating immersive digital worlds. This passion has shaped his journey, 
-                    leading him to create games in Unity, explore various programming languages, and embrace cutting-edge 
-                    technologies to craft meaningful digital experiences. He is expected to graduate in May 2025.
+                    Ravi Gangaiahanadoddi Kumar is currently double-majoring at Michigan State Univeristy. He is pursuing a B.S 
+                    in Computer Science and B.A in Games and Interactive Media. Originally from Bangalore, India, Ravi has been 
+                    passionate about video games and software development from a young age. His love for gaming began with *God
+                    of War: Ghost of Sparta* on the PSP, sparking a lifelong fascination with creating immersive digital worlds.
+                    This passion has shaped his journey, leading him to create games in Unity, explore various programming 
+                    languages, and embrace cutting-edge technologies to craft meaningful digital experiences. 
+                    He is expected to graduate in May 2025.
+                </p>
+                <p>
                 </p>
                 <span class='bg-blue'>EXPERIENCE</span>
-                <p>
                     <table class='output auto bordered collapsed padded'>
                         <tr>
-                            <td>YEARS OF EXP.</td>
+                            <td>YEARS OF PROGRAMMING EXPERIENCE</td>
                             <td>6-8</td>
                         </tr>
                     </table>
-                </p>
                 </div>
                 `
 },
