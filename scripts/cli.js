@@ -98,40 +98,9 @@ init();
 const commands = [
     {
         command: "restart",
-        description: "Restart the terminal session",
-        output: "<span class='code'>Starting the server...</span>",
-        action: (terminal) => {
-            terminal.clear();
-            terminal.path = "~";
-            terminal.updatePath();
-            
-            const delay = Math.floor(Math.random() * 2000) + 1000;
-            setTimeout(() => {
-                terminal.output = "<span class='code'> \
-                    <strong>about</strong> \
-                    <div class='text tab'> \
-                        About my Life, and Personal Information! \
-                    </div> \
-                </span> \
-                <span class='code'> \
-                    portfolio   \
-                    <div class='text tab'> \
-                        OPTIONS: <br /> \
-                        <table class='actions'> \
-                            <tr><td>-b</td><td>List blog sources</td></tr> \
-                            <tr><td>-c</td><td>List of projects contributed to</td></tr> \
-                            <tr><td>-e</td><td>List speaking engagements and events</td></tr> \
-                            <tr><td>-p</td><td>List publications</td></tr> \
-                            <tr><td>-v</td><td>List technical demonstration videos</td></tr> \
-                        </table> \
-                    </div> \
-                </span> \
-                <span class='code'>joke<div class='text tab'>Tell me a joke!</div></span> \
-                <span class='code'>clear<div class='text tab'>Clear the terminal output</div></span> \
-                <span class='code'>help<div class='text tab'>List all commands</div></span>";
-            }, delay);
-            return { success: true };
-        }
+        valid: true,
+        output: "Restarting terminal..."
+
     },
     {
         command: "help",
@@ -170,7 +139,7 @@ const commands = [
                     </div> \
                 </span> \
                 <span class='code'> \
-                    <strong>website-about</strong> \
+                    <strong>easter-eggs</strong> \
                     <div class='text tab bottom-8'> \
                         Lets you know the cool features on this website (•‿•) \
                 </span> \
@@ -179,7 +148,7 @@ const commands = [
     },
     {
         command: "about",
-        valid: false,
+        valid: true,
         output: `<div class='output'> \
                 <span class='bg-blue'>Hello World!</span> \
                 <p>My name is Ravi Gangaiahanadoddi Kumar, but you can call me <span class='bg-blue'>Ravi</span>.</p> \
@@ -210,7 +179,88 @@ const commands = [
                 </div>
                 `
 },
-    
+
+    {
+        command: "easter-eggs",
+        valid: true,
+        output: "<div class = 'output'> \
+                <strong><span class='bg-blue'>Easter Eggs</strong></span> \
+                </span> \
+                <p></p> \
+                <div class='output'> \
+                    Here are some cool features on this website!: </span>  \
+                    </div> \
+                    <div class='text tab'> \
+                        </div> \
+                        </span> \
+                        <span class='code'> \
+                        <strong>1. Typing ravi will display my personal information! </strong> \
+                        <div class='text tab'> \
+                        </div> \
+                        </span> \
+                        <span class='code'> \
+                        <strong>2. This protolio website is an identical replica of Windows XP (One of my favorite versions of Windows, after Windows 7) </strong> \
+                        <div class='text tab'> \
+                        </div> \
+                        </span> \
+                        <span class='code'> \
+                        <strong>3. The internet logo is animated during the daytime and remains disconnected during nighttime! </strong> \
+                        <div class='text tab'> \
+                        </div> \
+                        </span> \
+                        <span class='code'> \
+                        <strong>4. The terminal has a few easter eggs! Try typing some linux commands for a good laugh! </strong> \
+                        <div class='text tab'> \
+                        </div> \
+                        </span> \
+                        <span class='code'> \
+                        <strong>5. The website has animated clock (Wow! That's so cool) </strong> \
+                        <div class='text tab'> \
+                        </div> \
+                        </span> \
+                        <span class='code'> \
+                        <strong>6. Try clicking my profile picture x times to get a celebration! </strong> \
+                        <span class='text tab'> \
+                        </div> \
+                        </span> \
+                        <span class='code'> \
+                        <strong>7. Hitting arrow keys lets you go through your terminal history! </strong> \
+                </span>"
+    },
+
+    {
+        command: "ravi",
+        valid: true,
+        output: `<div class='output'> \
+                <span class='bg-blue'>Hello World!</span> \
+                <p>My name is Ravi Gangaiahanadoddi Kumar, but you can call me <span class='bg-blue'>Ravi</span>.</p> \
+                <div class='output'>
+                <span class='bg-blue'>CURRENT LOCATION</span>
+                <p>East Lansing, Michigan</p>
+                <span class='bg-blue'>CURRENTLY:- <span class='bg-green'>ABOUT TO GRADUATE!🎉 (05/2025)</span></span>
+                <p></p>
+                <span class='bg-blue'>BIOGRAPHY & BACKGROUND</span>
+                <p>
+                    Ravi Gangaiahanadoddi Kumar is currently double-majoring at Michigan State Univeristy. He is pursuing a B.S 
+                    in Computer Science and B.A in Games and Interactive Media. Originally from Bangalore, India, Ravi has been 
+                    passionate about video games and software development from a young age. His love for gaming began with *God
+                    of War: Ghost of Sparta* on the PSP, sparking a lifelong fascination with creating immersive digital worlds.
+                    This passion has shaped his journey, leading him to create games in Unity, explore various programming 
+                    languages, and embrace cutting-edge technologies to craft meaningful digital experiences. 
+                    He is expected to graduate in May 2025.
+                </p>
+                <p>
+                </p>
+                <span class='bg-blue'>EXPERIENCE</span>
+                    <table class='output auto bordered collapsed padded'>
+                        <tr>
+                            <td>YEARS OF PROGRAMMING EXPERIENCE</td>
+                            <td>6-8</td>
+                        </tr>
+                    </table>
+                </div>
+                `
+    },
     
     {
         command: "portfolio",

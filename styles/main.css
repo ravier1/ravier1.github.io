@@ -23,6 +23,8 @@
 	background-color: rgba(209, 209, 209, 0.5);
 }
 
+.bg-white { background-color:#ffffff; }
+
 .bg-red { background-color:#F5544D; }
 
 .bg-purple { background-color:#612af8; }
