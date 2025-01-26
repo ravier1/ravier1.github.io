@@ -302,18 +302,46 @@ div.output a, i {
 }
 
 .download-button {
+  position: relative; /* Add this */
   display: flex;
   align-items: center;
   height: 100%;
   background-color: #28a745; /* Green color */
   color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   text-decoration: none;
+  overflow: hidden; /* Important for ripple effect */
+  cursor: pointer;
   padding: 0 15px;
   font-size: 16px;
   font-weight: bold;
   border: none;
   cursor: pointer;
   margin-left: 0; /* Ensure no margin on the left */
+}
+
+.download-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 1s;
+}
+
+.download-button:active:after {
+  transform: scale(0, 0);
+  opacity: .3;
+  transition: 0s;
 }
 
 .button-logo {
