@@ -196,6 +196,7 @@ const commands = [
                         <li><strong>Try clicking my profile picture x times to get a celebration!</strong></li> \
                         <li><strong>Hitting arrow keys lets you go through your terminal history!</strong></li> \
                         <li><strong>The internet icon depicts whether I'm active at the moment, or not!</strong></li> \
+                        <li><strong>Notice the terminal window's name? Try clicking it :)</strong></li> \
                     </ol> \
                 </div> \
             </div>"
