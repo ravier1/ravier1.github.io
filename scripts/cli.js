@@ -190,9 +190,9 @@ const commands = [
                     <ol style='list-style-type: decimal; margin-left: 20px;'> \
                         <li><strong>Typing ravi will display my personal information!</strong></li> \
                         <li><strong>This portfolio website is an identical replica of Windows XP (One of my favorite versions of Windows, after Windows 7)</strong></li> \
-                        <li><strong>The internet logo is animated during the daytime and remains disconnected during nighttime!</strong></li> \
+                        <li><strong>The desktop wallpaper changes dynamically based on the time in your region (day or night)!</strong></li> \
                         <li><strong>The terminal has a few easter eggs! Try typing some linux commands for a good laugh!</strong></li> \
-                        <li><strong>The website has animated clock (Wow! That's so cool)</strong></li> \
+                        <li><strong>The website has animated clock (Wow! That's so cool) with the time in your region (Genius Coder?)</strong></li> \
                         <li><strong>Try clicking my profile picture x times to get a celebration!</strong></li> \
                         <li><strong>Hitting arrow keys lets you go through your terminal history!</strong></li> \
                         <li><strong>The internet icon depicts whether I'm active at the moment, or not!</strong></li> \

@@ -127,18 +127,23 @@
         './taskbar_icons/network-animate/004.png',
       ];
       const randomIndex = Math.floor(Math.random() * wifiImages.length);
-      const hour = new Date().getHours();
-      if (hour >= 6 && hour < 22) 
-      {
+      
+      // Get current time in PST
+      const pstTime = new Date().toLocaleString("en-US", {
+        timeZone: "America/Los_Angeles",
+        hour: '2-digit',
+        hour12: false
+      });
+      const hourPST = parseInt(pstTime);
+
+      // Animate between 6 AM and 10 PM PST
+      if (hourPST >= 6 && hourPST < 22) {
         wifiIcon.src = wifiImages[randomIndex];
-        const randomTime = Math.floor(Math.random() * 5000) + 1000; // Random time between 1 and 5 seconds
+        const randomTime = Math.floor(Math.random() * 5000) + 1000;
         setTimeout(changeWifiIcon, randomTime);
-      } 
-      else 
-      {
+      } else {
         wifiIcon.src = './taskbar_icons/network-animate/005.png';
       }
-
     }
 
     setBackground();
