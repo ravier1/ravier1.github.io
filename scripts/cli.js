@@ -183,49 +183,22 @@ const commands = [
     {
         command: "easter-eggs",
         valid: true,
-        output: "<div class = 'output'> \
-                <strong><span class='bg-blue'>Easter Eggs</strong></span> \
-                </span> \
-                <p></p> \
-                <div class='output'> \
-                    Here are some cool features on this website!: </span>  \
-                    </div> \
-                    <div class='text tab'> \
-                        </div> \
-                        </span> \
-                        <span class='code'> \
-                        <strong>1. Typing ravi will display my personal information! </strong> \
-                        <div class='text tab'> \
-                        </div> \
-                        </span> \
-                        <span class='code'> \
-                        <strong>2. This protolio website is an identical replica of Windows XP (One of my favorite versions of Windows, after Windows 7) </strong> \
-                        <div class='text tab'> \
-                        </div> \
-                        </span> \
-                        <span class='code'> \
-                        <strong>3. The internet logo is animated during the daytime and remains disconnected during nighttime! </strong> \
-                        <div class='text tab'> \
-                        </div> \
-                        </span> \
-                        <span class='code'> \
-                        <strong>4. The terminal has a few easter eggs! Try typing some linux commands for a good laugh! </strong> \
-                        <div class='text tab'> \
-                        </div> \
-                        </span> \
-                        <span class='code'> \
-                        <strong>5. The website has animated clock (Wow! That's so cool) </strong> \
-                        <div class='text tab'> \
-                        </div> \
-                        </span> \
-                        <span class='code'> \
-                        <strong>6. Try clicking my profile picture x times to get a celebration! </strong> \
-                        <span class='text tab'> \
-                        </div> \
-                        </span> \
-                        <span class='code'> \
-                        <strong>7. Hitting arrow keys lets you go through your terminal history! </strong> \
-                </span>"
+        output: "<div class='output'> \
+                <span class='bg-blue'>Easter Eggs</span> \
+                <p>Here are some cool features on this website!:</p> \
+                <div class='output' style='padding-left: 20px;'> \
+                    <ol style='list-style-type: decimal; margin-left: 20px;'> \
+                        <li><strong>Typing ravi will display my personal information!</strong></li> \
+                        <li><strong>This portfolio website is an identical replica of Windows XP (One of my favorite versions of Windows, after Windows 7)</strong></li> \
+                        <li><strong>The internet logo is animated during the daytime and remains disconnected during nighttime!</strong></li> \
+                        <li><strong>The terminal has a few easter eggs! Try typing some linux commands for a good laugh!</strong></li> \
+                        <li><strong>The website has animated clock (Wow! That's so cool)</strong></li> \
+                        <li><strong>Try clicking my profile picture x times to get a celebration!</strong></li> \
+                        <li><strong>Hitting arrow keys lets you go through your terminal history!</strong></li> \
+                        <li><strong>The internet icon depicts whether I'm active at the moment, or not!</strong></li> \
+                    </ol> \
+                </div> \
+            </div>"
     },
 
     {

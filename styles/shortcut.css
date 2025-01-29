@@ -40,7 +40,21 @@
     color: white; /* Ensure text is white */
     text-align: center;
     font-size: 14px; /* Increased from 13px */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    background-color: #0055EA; /* Classic Windows XP selection blue */
+    padding: 1px 4px;
+    border-radius: 1px;
+    text-shadow: none; /* Remove text shadow */
+}
+
+/* Brighten blue background on hover */
+.xp-shortcut-link:hover .xp-shortcut span {
+    background-color: #1C71FF; /* Lighter blue on hover */
+}
+
+/* Remove the previous hover background effect */
+.xp-shortcut-link:hover .xp-shortcut {
+    background-color: transparent;
+    outline: none;
 }
 
 /* Update second shortcut positioning to be above first */
@@ -55,7 +69,8 @@
     color: inherit;
 }
 
-.xp-shortcut-link:hover .xp-shortcut {
-    background-color: rgba(173, 216, 230, 0.3);
-    outline: 1px dotted #000;
+/* Add positioning for the third shortcut */
+.xp-shortcut.third {
+    bottom: 380px; /* Positioned 130px above the second shortcut */
+    left: 10px;
 }
