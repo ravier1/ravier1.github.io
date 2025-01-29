@@ -195,7 +195,7 @@ const commands = [
                         <li><strong>The website has animated clock (Wow! That's so cool) with the time in your region (Genius Coder?)</strong></li> \
                         <li><strong>Try clicking my profile picture x times to get a celebration!</strong></li> \
                         <li><strong>Hitting arrow keys lets you go through your terminal history!</strong></li> \
-                        <li><strong>The internet icon depicts whether I'm active at the moment, or not!</strong></li> \
+                        <li><strong>The internet icon on the taskbar depicts whether I'm active at the moment, or not! (animated when active, crossed out otherwise)</strong></li> \
                         <li><strong>Notice the terminal window's name? Try clicking it :)</strong></li> \
                     </ol> \
                 </div> \
