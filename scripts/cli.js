@@ -388,32 +388,78 @@ const commands = [
         command: "skills",
         description: "List programming languages and technologies",
         output: `<div class='output'>
-            <span class='bg-purple'>PROGRAMMING LANGUAGES & TECHNOLOGIES</span>
+            <span class='bg-purple'>PROGRAMMING LANGUAGES</span>
             <div class='skills-grid'>
                 <div class='skill-item'>
                     <img src="./skills-icons/python.png" alt="Python" class="skill-icon">
-                    <span style="font-family: 'JetBrains Mono', monospace;">Python</span>
+                    <span>Python</span>
                 </div>
                 <div class='skill-item'>
                     <img src="./skills-icons/java.png" alt="Java" class="skill-icon">
-                    <span style="font-family: 'JetBrains Mono', monospace;">Java</span>
+                    <span>Java</span>
                 </div>
                 <div class='skill-item'>
-                    <img src="./skills-icons/c++.png" alt="C++" class="skill-icon">
-                    <span style="font-family: 'JetBrains Mono', monospace;">C++</span>
+                    <img src="./skills-icons/cpp.png" alt="C++" class="skill-icon">
+                    <span>C++</span>
                 </div>
-
                 <div class='skill-item'>
                     <img src="./skills-icons/csharp.png" alt="C#" class="skill-icon">
-                    <span style="font-family: 'JetBrains Mono', monospace;">C#</span>
+                    <span>C#</span>
+                </div>
+            </div>
+            <p>
+            </p>
+            <span class='bg-purple'>WEB TECHNOLOGIES</span>
+            <div class='skills-grid'>
+                <div class='skill-item'>
+                    <img src="./skills-icons/html.png" alt="HTML" class="skill-icon">
+                    <span>HTML</span>
                 </div>
                 <div class='skill-item'>
+                    <img src="./skills-icons/css.png" alt="CSS" class="skill-icon">
+                    <span>CSS</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/javascript.png" alt="JavaScript" class="skill-icon">
+                    <span>JavaScript</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/sqlite.png" alt="SQLite3" class="skill-icon">
+                    <span>SQLite3</span>
+                </div>
+            </div>
+            <p>
+            </p>
+            <span class='bg-purple'>DEVELOPMENT TOOLS</span>
+            <div class='skills-grid'>
+                <div class='skill-item'>
                     <img src="./skills-icons/unity.png" alt="Unity" class="skill-icon">
-                    <span style="font-family: 'JetBrains Mono', monospace;">Unity</span>
+                    <span>Unity</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/android-studio.png" alt="Android Studio" class="skill-icon">
+                    <span>Android Studio (Currently Learning)</span>
                 </div>
                 <div class='skill-item'>
                     <img src="./skills-icons/flutter.png" alt="Flutter" class="skill-icon">
-                    <span style="font-family: 'JetBrains Mono', monospace;">Flutter (Still Learning)</span>
+                    <span>Flutter (Currently Learning)</span>
+                </div>
+            </div>
+            <p>
+            </p>
+            <span class='bg-purple'>DESIGN & MULTIMEDIA</span>
+            <div class='skills-grid'>
+                <div class='skill-item'>
+                    <img src="./skills-icons/photoshop.png" alt="Photoshop" class="skill-icon">
+                    <span>Adobe Photoshop</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/premiere.png" alt="Premiere Pro" class="skill-icon">
+                    <span>Adobe Premiere Pro</span>
+                </div>
+                <div class='skill-item'>
+                    <img src="./skills-icons/blender.png" alt="Blender" class="skill-icon">
+                    <span>Blender</span>
                 </div>
             </div>
             </div>`
