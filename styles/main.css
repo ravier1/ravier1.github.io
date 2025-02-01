@@ -111,6 +111,10 @@ div.title {
   color:#9c9c9c;
 }
 
+.menu h1 i {
+    color: white; /* Override the yellow color for icons in the menu bar */
+}
+
 .buttons-flex {
   position: absolute;
   display:flex;
