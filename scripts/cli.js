@@ -345,7 +345,12 @@ const commands = [
     {
         command: "resume",
         valid: true,
-        output: "Here is my resume to download: -",
+        output: "<div class='output'> \
+                <p>Here is my resume to download: </p> \
+                <p><a href='./resume/RaviGKumar - Resume.pdf' target='_blank' download> \
+                    <i class='fas fa-file-download'></i> My Resume! \
+                    <i class='fas fa-external-link-alt'></i></a></p> \
+                </div>"
     },
     {
         command: "contact",
