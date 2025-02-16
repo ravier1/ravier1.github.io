@@ -116,6 +116,12 @@ const commands = [
                     </div> \
                 </span> \
                 <span class='code'> \
+                    <strong>projects</strong> \
+                    <div class='text tab'> \
+                        Shows all the projects I've worked on so far \
+                    </div> \
+                </span> \
+                <span class='code'> \
                     <strong>contact</strong> \
                     <div class='text tab'> \
                         Displays my contact information (e-mail, socials, etc.) \
@@ -237,110 +243,74 @@ const commands = [
     },
     
     {
-        command: "portfolio",
-        valid: false,
-        output: "invalid command, must supply argument",
-        arguments: [
-            {
-                argument: "-b",
-                output: "<p>Check out my blog posts on:</p> \
-                        <ul class='output dash'> \
-                            <li><a href='https://dev.to/probablyrealrob' target='_blank'>DEV Community <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://hackernoon.com/u/grobbert' target='_blank'>Hackernoon <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://medium.com/@robert.hedgpeth' target='_blank'>Medium <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://mariadb.com/resources/blog/author/roberthedgpeth/' target='_blank'>Official MariaDB Blog <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://blog.couchbase.com/author/robert-hedgpeth/' target='_blank'>Official Couchbase Blog <i class='fas fa-external-link-alt'></i></a></li> \
-                        </ul>"
-            },
-            {
-                argument: "-c",
-                output: "<div class='output'> \
-                            <p>Recent projects Rob has created and contributed to:</p>\
-                            <table class='output auto bordered collapsed padded actions'> \
-                                <tr> \
-                                    <td>Project</td> \
-                                    <td>Description</td> \
-                                </tr> \
-                                <tr> \
-                                    <td><a href='https://github.com/mariadb-corporation?q=dev-example&type=&language=&sort=' target='_blank'>MariaDB Developer Examples <i class='fas fa-external-link-alt'></i></td> \
-                                    <td>Several repositores spanning a variety of different programming languages and technologies.</td> \
-                                </tr> \
-                                <tr> \
-                                    <td><a href='https://www.nuget.org/packages/Couchbase.Lite.Mapping/' target='_blank'>Couchbase Lite Mapping <i class='fas fa-external-link-alt'></i></td> \
-                                    <td>A simple component that extends Couchbase.Lite to provide methods to convert between data models and objects. </td> \
-                                </tr> \
-                                <tr> \
-                                    <td><a href='https://github.com/couchbaselabs/CouchDraw' target='_blank'>CouchDraw <i class='fas fa-external-link-alt'></i></td> \
-                                    <td>A multi-user synchronized drawing application for iOS and Android.</td> \
-                                </tr> \
-                                <tr> \
-                                    <td><a href='https://github.com/couchbaselabs/chatbase' target='_blank'>Chatbase <i class='fas fa-external-link-alt'></i></td> \
-                                    <td>A simple chat app power by Couchbase Lite and Sync Gateway.</td> \
-                                </tr> \
-                            </table> \
-                        </div>"
-            },
-            {
-                argument: "-e",
-                output: "<p>Events Rob has presented/spoken at in 2021:</p> \
-                        <ul class='output dash'> \
-                            <li><a href='https://plus.qconferences.com/plus2021/speakers/rob-hedgpeth' target='_blank'>QCon Plus (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://go.mariadb.com/22Q1-WBN-GLBL-DBaaS-Future-of-Databases-Massive-Scale-2021-10-28_Registration-LP.html' target='_blank'>Distributed SQL & MariaDB (Webinar) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.scale.bythebay.io/speakers-1' target='_blank'>Scale By The Bay (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://cloud.withgoogle.com/next/speakers?speaker=85D45B91CC7BFFFC' target='_blank'>Google Next (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.bigdata-toronto.com/blog/speakers/robert-hedgpeth-3/' target='_blank'>Big Data & AI Toronto (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://mariadb.com/resources/webinars/database-innovation-summit-2021-why-dbaas-is-the-future-of-cloud-computing/' target='_blank'>MariaDB Database Innovation Summit (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://go.mariadb.com/21Q4-WBN-GLBL-OSSG-NoSQL-Listener-2021-09-14_Registration-LP.html' target='_blank'>Managing NoSQL Data with a Relational Database (Webinar) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.developerweek.com/global/conference/cloud/speakers/' target='_blank'>DeveloperWeek Global (Conference)<i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://go.mariadb.com/21Q4-WBN-GLBL-OSSG-Python-Connector-2021-08-26_Registration-LP.html' target='_blank'>Python + MariaDB (Webinar) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://buildingthebackend.com/data-store/a-powerful-open-source-database-that-supports-many-storage-needs-mariadb/' target='_blank'>Building the Backend (Podcast) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://rss.com/podcasts/councilofthewisedevelopers/257228/' target='_blank'>Council of the Wise Developers (Podcast) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://emamo.com/event/jlove-2021/r/speaker/rob-hedgpeth-7' target='_blank'>jLove (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://dmradio.libsyn.com/-skys-the-limit-why-cloud-databases-will-rule' target='_blank'>DM Radio (Live Radio & Podcast) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://mariadb.org/cloud-minifest2021/skysql/' target='_blank'>MariaDB Foundation Server Fest (Conference)<i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://mariadb.com/resources/webinars/database-innovation-summit-2021/' target='_blank'>MariaDB Database Innovation Summit (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://go.mariadb.com/21Q3-WBN-GLBL-OSSG-JSON-Hybrid-Data-Models-2021-06-15_Registration-LP.html' target='_blank'>JSON + MariaDB (Webinar) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://go.mariadb.com/21Q3-WBN-GLBL-OSSG-Unleash-Reactive-Programming-R2DBC-2021-05-27_Registration-LP.html' target='_blank'>MariaDB Webinar - R2DBC <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://pheedloop.com/dsconnect2021/site/sessions/?id=SESWB8Z40SHOXYABQ' target='_blank'>Data Summit Connect (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.developerweek.com/global/conference/management/speakers/' target='_blank'>DeveloperWeek Global Management (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.developerweek.com/europe/' target='_blank'>DeveloperWeek Europe <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://go.mariadb.com/21Q3-WBN-GLBL-OSSC-PLSQL-Compatibility-2021-03-31_Registration-LP.html' target='_blank'>MariaDB & PL/SQL (Webinar) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.conf42.com/enterprise2021' target='_blank'>Conf42 Enterprsie Software (Conference) <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://go.mariadb.com/21Q2-WBN-GLBL-OSSG-Modern-SQL-with-MariaDB-2021-02-17_Registration-LP.html' target='_blank'>Modern SQL with MariaDB (Webinar) <i class='fas fa-external-link-alt'></i></a></li> \
-                        </ul>"
-            },
-            {
-                argument: "-p",
-                output: "<p>Rob has written the first and only book, R2DBC Revealed, on a new relational database connectivity specification. <br /><br /> \
-                        R2DBC Revealed, published by Apress, introduces Reactive Relational Database Connectivity (R2DBC), a modern way of connecting to \
-                        and querying relational databases from Java and other JVM languages. The book begins by helping you understand not only what \
-                        reactive programming is, but why it is necessary. Then building on those fundamentals, the book takes you into the world of databases \
-                        and the newly released Reactive Relational Database Connectivity (R2DBC) specification. <br /><br /> \
-                        Some of the places R2DBC Revealed can be found are:</p> \
-                        <ul class='output dash'> \
-                            <li><a href='https://link.springer.com/book/10.1007/978-1-4842-6989-3' target='_blank'>Spring Link <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.amazon.com/R2DBC-Revealed-Relational-Connectivity-Programmers-ebook/dp/B091KFC3TX/' target='_blank'>Amazon <i class='fas fa-external-link-alt'></i></a></li> \
-                            <li><a href='https://www.goodreads.com/book/show/56906027-r2dbc-revealed' target='_blank'>goodreads <i class='fas fa-external-link-alt'></i></a></li> \
-                        </ul>"
-            },
-            {
-                argument: "-v",
-                output: "<p>Recent technical demonstration videos Rob has created:</p> \
-                        <ul class='output dash'> \
-                        <li><a href='https://www.youtube.com/watch?v=rzALUEZ6uFU' target='_blank'>Columnar Storage + Python Powering Modern Data Science and Analytics <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=y1ahXZn0nWQ' target='_blank'>Taking Distributed SQL to the Next Level with Columnar Indexing <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=3igIRQqmYc4' target='_blank'>The future of databases: distributed SQL & MariaDB <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=ntO2x4XHfUE' target='_blank'>Demo of MariaDB's Oracle Compatibility Mode <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=ZnFq_S6T9Qc' target='_blank'>Intro to MariaDB's Oracle Compatibility Mode <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=2VEbgfluQqs' target='_blank'>Getting started with JSON table in MariaDB <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=-rf41EmgNO0' target='_blank'>Intro to JSON in MariaDB <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=EL9wyrpFP78' target='_blank'>Creating Fully Reactive Solutions with R2DBC <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=MF7UItjxDWA' target='_blank'>Getting Reactive with Relational Databases and R2DBC <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=KRmosdzNGrY' target='_blank'>SkySQL: The MariaDB Database-as-a-Service <i class='fas fa-external-link-alt'></i></a></li> \
-                        <li><a href='https://www.youtube.com/watch?v=bIaFIuQc9YQ' target='_blank'>MariaDB Cloud Server Fest - Panel <i class='fas fa-external-link-alt'></i></a></li> \
-                    </ul>"
-            }
-        ]
+        command: "projects",
+        valid: true,
+        output: `<div class='output'>
+        <span class='bg-blue'>MY PROJECTS</span>
+        <div class='project-item'>
+            <img src="./project-icons/union-pacific.webp" alt="Union Pacific Project" class="project-icon">
+            <div class="project-content">
+                <h3>CSE 498: Collaborative Design (Capstone Course) - Union Pacific</h3>
+                <span class='date'>January 2025 - Present</span>
+                <p>Collaborating with a team of six to develop a GPS-indexed video player in Unity, integrating real-world train recordings with simulation data via an API. The system dynamically reflected signal and route changes based on the simulation, helping locomotive engineers gain field-ready experience while training.</p>
+                <a href='http://www.capstone.cse.msu.edu/2025-01/projects/union-pacific/' target='_blank' class='project-link'>
+                    <i class='fas fa-external-link-square-alt'></i> Project Website <i class='fas fa-external-link-alt'></i>
+                </a>
+            </div>
+        </div>
+        <div class='project-item'>
+            <img src="./project-icons/beethoven.webp" alt="Beethoven Discord Bot" class="project-icon">
+            <div class="project-content">
+                <h3>Beethoven</h3>
+                <span class='date'>Dec 2021 - Present</span>
+                <p>A Python Discord Music bot with support for YouTube, Spotify and more. (Spotify and more coming soon down in roadmap)</p>
+                <a href='https://github.com/ravier1/Beethoven' target='_blank' class='project-link'>
+                    <i class='fab fa-github'></i> View on GitHub <i class='fas fa-external-link-alt'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class='project-item'>
+            <img src="./project-icons/vr-peggle.webp" alt="VR Peggle Game" class="project-icon">
+            <div class="project-content">
+                <h3>VR Peggle!</h3>
+                <span class='date'>Nov 2024 - Dec 2024</span>
+                <p>Worked with a team of 6, created a VR game designed for Quest 2, using Unity as a base platform. Worked on coding scripts, and level design for the game.</p>
+                <a href='https://ravier1.itch.io/vr-peggle' target='_blank' class='project-link'>
+                    <i class='fas fa-gamepad'></i> Play on itch.io <i class='fas fa-external-link-alt'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class='project-item'>
+            <img src="./project-icons/slaughter-house.webp" alt="Slaughter House VR" class="project-icon">
+            <div class="project-content">
+                <h3>Slaughter House</h3>
+                <span class='date'>Oct 2021 - Nov 2024</span>
+                <p>Worked with a team of 4 to create a VR experience that focused on the audience as well as the player behind the VR headset. Built using the Unity platform.</p>
+                <div class="project-links">
+                    <a href='https://ravier1.itch.io/slaughter-house' target='_blank' class='project-link'>
+                        <i class='fas fa-gamepad'></i> Play on itch.io <i class='fas fa-external-link-alt'></i>
+                    </a>
+                    <a href='https://vimeo.com/1027346707/b390ca9c8c?ts=0&share=copy' target='_blank' class='project-link'>
+                        <i class='fas fa-video'></i> Watch Performance <i class='fas fa-external-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class='project-item'>
+            <img src="./project-icons/channel-the-panel.webp" alt="Channel The Panel" class="project-icon">
+            <div class="project-content">
+                <h3>Channel The Panel!</h3>
+                <span class='date'>September 2024 - October 2024</span>
+                <p>The player is thrust into a world of wires and pipes. He is in the communication center of the SS. Hellena. The player is given the duty of passing urgent messages throughout the vessel. The player does this via the operation of a switchboard. Worked as a team of 3 focusing on backend scripts. <em>Built for the Quest 2 using Unity</em></p>
+                <a href='https://ravier1.itch.io/channel-the-panel' target='_blank' class='project-link'>
+                    <i class='fas fa-gamepad'></i> Play on itch.io <i class='fas fa-external-link-alt'></i>
+                </a>
+            </div>
+        </div>
+    </div>`
     },
     {
         command: "resume",
