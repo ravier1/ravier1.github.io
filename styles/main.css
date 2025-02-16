@@ -66,8 +66,8 @@ body {
   display:flex;
   flex-direction: column;
   width:100%;
-  max-width:800px;
-  height:610px;
+  max-width:1000px;
+  height:710px;
   overflow: hidden;
   border-radius: 6px;
   border: 1px solid gray;
@@ -464,4 +464,65 @@ div.output a, i {
     color: white;
     font-family: 'JetBrains Mono', monospace;
     font-size: 14px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #3465a4;
+    border-radius: 5px;
+    clear: both;
+    overflow: hidden;
+}
+
+.project-item h3 {
+    color: #729fcf;
+    margin: 0 0 10px 0;
+}
+
+.project-item .date {
+    color: #8ae234;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    margin: 10px 0;
+}
+
+.project-link {
+    display: inline-block;
+    color: #729fcf;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.project-icon {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-right: 16px;
+    float: left;
+}
+
+.project-content {
+    margin-left: 80px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.project-links .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
