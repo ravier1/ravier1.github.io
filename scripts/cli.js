@@ -256,6 +256,9 @@ const commands = [
                 <a href='http://www.capstone.cse.msu.edu/2025-01/projects/union-pacific/' target='_blank' class='project-link'>
                     <i class='fas fa-external-link-square-alt'></i> Project Website <i class='fas fa-external-link-alt'></i>
                 </a>
+                <a href='./video-player.html' target='_blank' class='project-link'>
+                    <i class='fas fa-video'></i> Watch Performance <i class='fas fa-external-link-alt'></i>
+                </a>
             </div>
         </div>
         <div class='project-item'>
@@ -292,7 +295,7 @@ const commands = [
                     <a href='https://ravier1.itch.io/slaughter-house' target='_blank' class='project-link'>
                         <i class='fas fa-gamepad'></i> Play on itch.io <i class='fas fa-external-link-alt'></i>
                     </a>
-                    <a href='https://vimeo.com/1027346707/b390ca9c8c?ts=0&share=copy' target='_blank' class='project-link'>
+                    <a href='./video-player.html' target='_blank' class='project-link'>
                         <i class='fas fa-video'></i> Watch Performance <i class='fas fa-external-link-alt'></i>
                     </a>
                 </div>
