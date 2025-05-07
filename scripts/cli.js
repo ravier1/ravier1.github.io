@@ -256,9 +256,6 @@ const commands = [
                 <a href='https://www.capstone.cse.msu.edu/2025-01/projects/union-pacific/' target='_blank' class='project-link'>
                     <i class='fas fa-external-link-square-alt'></i> Project Website <i class='fas fa-external-link-alt'></i>
                 </a>
-                <a href='./video-player.html' target='_blank' class='project-link'>
-                    <i class='fas fa-video'></i> Watch Performance <i class='fas fa-external-link-alt'></i>
-                </a>
             </div>
         </div>
         <div class='project-item'>
