@@ -253,7 +253,7 @@ const commands = [
                 <h3>CSE 498: Collaborative Design (Capstone Course) - Union Pacific</h3>
                 <span class='date'>January 2025 - Present</span>
                 <p>Collaborating with a team of six to develop a GPS-indexed video player in Unity, integrating real-world train recordings with simulation data via an API. The system dynamically reflected signal and route changes based on the simulation, helping locomotive engineers gain field-ready experience while training.</p>
-                <a href='http://www.capstone.cse.msu.edu/2025-01/projects/union-pacific/' target='_blank' class='project-link'>
+                <a href='https://www.capstone.cse.msu.edu/2025-01/projects/union-pacific/' target='_blank' class='project-link'>
                     <i class='fas fa-external-link-square-alt'></i> Project Website <i class='fas fa-external-link-alt'></i>
                 </a>
                 <a href='./video-player.html' target='_blank' class='project-link'>
