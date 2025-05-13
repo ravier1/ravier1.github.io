@@ -320,15 +320,10 @@ const commands = [
     {
         command: "contact",
         valid: true,
-        output: "<p>You can contact me through my emails: </p> \
+        output: "<p>Contact me via e-mail: </p> \
                 <table class='output auto bordered collapsed padded'> \
                             <tr> \
-                                <td>Personal email:</td> \
                                 <td><a href='mailto:rvgk1202@icloud.com' target='_blank'>rvgk1202@icloud.com <i class='fas fa-external-link-alt'></i></a></td> \
-                            </tr> \
-                            <tr> \
-                                <td>School email:</td> \
-                                <td><a href='mailto:gkravi@msu.edu' target='_blank'>gkravi@msu.edu <i class='fas fa-external-link-alt'></i></a></td> \
                             </tr> \
                         </table> \
                 <p></p> \
