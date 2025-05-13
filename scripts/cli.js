@@ -161,13 +161,12 @@ const commands = [
                 <div class='output'>
                 <span class='bg-blue'>BIOGRAPHY & BACKGROUND</span>
                 <p>
-                    Ravi Gangaiahanadoddi Kumar is currently double-majoring at Michigan State Univeristy. He is pursuing a B.S 
-                    in Computer Science and B.A in Games and Interactive Media. Originally from Bangalore, India, Ravi has been 
-                    passionate about video games and software development from a young age. His love for gaming began with God
-                    of War: Ghost of Sparta on the PSP, sparking a lifelong fascination with creating immersive digital worlds.
+                    Ravi Gangaiahanadoddi Kumar is a double major from Michigan State University. He is a <b>B.S graduate in Computer Science, and majored in Games and Interactive Media as well</b>. Originally from Bangalore, India, Ravi has been 
+                    passionate about video games and software development from a young age. His love for gaming began with <b>God
+                    of War: Ghost of Sparta</b> on the PSP, sparking a lifelong fascination with creating immersive digital worlds.
                     This passion has shaped his journey, leading him to create games in Unity, explore various programming 
                     languages, and embrace cutting-edge technologies to craft meaningful digital experiences. 
-                    He is expected to graduate in May 2025.
+                    
                 </p>
                 <p>
                 </p>
