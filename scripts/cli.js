@@ -159,16 +159,12 @@ const commands = [
                 <span class='bg-blue'>Hello World!</span> \
                 <p>My name is Ravi Gangaiahanadoddi Kumar, but you can call me <span class='bg-blue'>Ravi</span>.</p> \
                 <div class='output'>
-                <span class='bg-blue'>CURRENT LOCATION</span>
-                <p>East Lansing, Michigan</p>
-                <span class='bg-blue'>CURRENTLY:- <span class='bg-green'>ABOUT TO GRADUATE!🎉 (05/2025)</span></span>
-                <p></p>
                 <span class='bg-blue'>BIOGRAPHY & BACKGROUND</span>
                 <p>
                     Ravi Gangaiahanadoddi Kumar is currently double-majoring at Michigan State Univeristy. He is pursuing a B.S 
                     in Computer Science and B.A in Games and Interactive Media. Originally from Bangalore, India, Ravi has been 
-                    passionate about video games and software development from a young age. His love for gaming began with *God
-                    of War: Ghost of Sparta* on the PSP, sparking a lifelong fascination with creating immersive digital worlds.
+                    passionate about video games and software development from a young age. His love for gaming began with God
+                    of War: Ghost of Sparta on the PSP, sparking a lifelong fascination with creating immersive digital worlds.
                     This passion has shaped his journey, leading him to create games in Unity, explore various programming 
                     languages, and embrace cutting-edge technologies to craft meaningful digital experiences. 
                     He is expected to graduate in May 2025.
